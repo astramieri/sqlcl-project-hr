@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="hr/sequences/departments_seq.sql" relativeToChangelogFile="true"/>
+<include file="hr/sequences/employees_seq.sql" relativeToChangelogFile="true"/>
+<include file="hr/sequences/locations_seq.sql" relativeToChangelogFile="true"/>
+<include file="hr/sequences/requests_seq.sql" relativeToChangelogFile="true"/>
+<include file="hr/sequences/users_seq.sql" relativeToChangelogFile="true"/>
+<include file="hr/functions/generate_token.sql" relativeToChangelogFile="true"/>
+<include file="hr/procedures/secure_dml.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/apex.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/countries.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/departments.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/employees.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/jobs.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/job_history.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/locations.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/log.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/regions.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/requests.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/users.sql" relativeToChangelogFile="true"/>
+<include file="hr/functions/compose_url.sql" relativeToChangelogFile="true"/>
+<include file="hr/procedures/add_job_history.sql" relativeToChangelogFile="true"/>
+<include file="hr/procedures/insert_log.sql" relativeToChangelogFile="true"/>
+<include file="hr/triggers/apex_trg_01.sql" relativeToChangelogFile="true"/>
+<include file="hr/triggers/requests_trg_01.sql" relativeToChangelogFile="true"/>
+<include file="hr/triggers/secure_employees.sql" relativeToChangelogFile="true"/>
+<include file="hr/triggers/users_trg_01.sql" relativeToChangelogFile="true"/>
+<include file="hr/views/dep_details_view.sql" relativeToChangelogFile="true"/>
+<include file="hr/views/emp_details_view.sql" relativeToChangelogFile="true"/>
+<include file="hr/views/emp_hierarchy_view.sql" relativeToChangelogFile="true"/>
+<include file="hr/views/emp_history_view.sql" relativeToChangelogFile="true"/>
+<include file="hr/views/job_details_view.sql" relativeToChangelogFile="true"/>
+<include file="hr/triggers/update_job_history.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/countries.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/departments.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/employees.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/jobs.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/job_history.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/locations.sql" relativeToChangelogFile="true"/>
+<include file="hr/comments/regions.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/dept_location_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/emp_department_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/emp_job_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/emp_manager_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/emp_name_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/jhist_department_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/jhist_employee_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/jhist_job_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/loc_city_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/loc_country_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/loc_state_province_ix.sql" relativeToChangelogFile="true"/>
+<include file="hr/functions/validate_token.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/countr_reg_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/dept_loc_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/dept_mgr_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/emp_dept_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/emp_job_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/emp_manager_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/jhist_dept_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/jhist_emp_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/jhist_job_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/loc_c_id_fk.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/requests_fk_01.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
