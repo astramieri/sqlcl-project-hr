@@ -4,4 +4,5 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 <include file="hr/tables/employees.sql" relativeToChangelogFile="true"/>
+<include file="hr/functions/f_to_char.sql" relativeToChangelogFile="true"/> <!-- action="create" -->
 </databaseChangeLog>
